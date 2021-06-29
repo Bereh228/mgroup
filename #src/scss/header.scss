@@ -1,3 +1,44 @@
 .header{
-    padding-top: 40px;
+    margin-bottom: 120px;
+    &__logo{
+        width: 213px;
+        height: 46px;
+        border-right: 1px solid #666;
+        padding-right: 27px;
+        img{
+            display: block;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__aboutActivity{
+        margin-left: 40px;
+        font-size: 12px;
+        
+    }
+    &__timework{
+        text-align: center;
+        &-text{
+            color: $color-text4;
+        }
+        &-time{
+            color: $color-text2;
+            font-weight: bold;
+        }
+    }
+    &__consultation{
+        text-align: center;
+        &-text{
+            color: $color-text4;
+        }
+        &-tel{
+            text-decoration: none;
+            color: $color-text2;
+            font-weight: bold;
+            &:hover{
+                text-decoration: none;
+                color: $color-text2;
+            }
+        }
+    }
 }

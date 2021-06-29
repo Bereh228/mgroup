@@ -10,9 +10,11 @@
     }
 }
 @import 'reboot.min.scss';
+@import 'vars';
 
 @import 'main';
 @import 'header';
+@import 'button';
 
 body{
     font-family: 'Montserrat', sans-serif;

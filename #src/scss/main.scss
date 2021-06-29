@@ -1,4 +1,39 @@
 .main{
     min-height: 770px;
     background: url('../img/main_bg.png') center (center/cover) no-repeat;
+    padding-top: 40px;
+    &__header{
+        font-weight: bold;
+        font-size: 32px;
+        color: #f8323d;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    &__descr{
+        font-size: 18px;
+        color: $color-text4;
+        margin-bottom: 30px;
+        line-height: 1;
+    }
+    &__pros{
+        padding: 0;
+        margin-bottom: 30px;
+        list-style: none;
+        li{
+            margin-bottom: 23px;
+            position: relative;
+            margin-left: 40px;
+            &::before{
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url('../img/list-icon.svg');
+                position: absolute;
+                left: -40px;
+                top: 0;
+            }
+        }
+    }
 }
