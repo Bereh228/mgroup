@@ -383,6 +383,7 @@ template {
   position: absolute;
   left: -40px;
   top: 0;
+  background-size: 100% 100%;
 }
 
 .header {
@@ -469,12 +470,86 @@ template {
   font-size: 14px;
 }
 
+.advantage {
+  padding-top: 20px;
+  min-height: 537px;
+}
+
+.advantage .wrapper {
+  margin-top: 38px;
+}
+
+.advantage .wrapper__item {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #d4d4d4;
+  border-radius: 25px;
+  padding-top: 40px;
+  min-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.advantage .wrapper__item_active {
+  border: 3px solid #ff5c00;
+}
+
+.advantage__header {
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.advantage__descr {
+  font-size: 14px;
+  color: #444;
+  width: 264px;
+  line-height: 1.3;
+}
+
+.advantage__hemisphere {
+  width: 115px;
+  height: 110px;
+  background: -o-linear-gradient(356.48deg, #FF5C00 30.62%, #F8323D 79.3%);
+  background: linear-gradient(93.52deg, #FF5C00 30.62%, #F8323D 79.3%);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -55px;
+  line-height: 55px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 .container {
   width: 1410px;
+}
+
+h2.title {
+  color: #222;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+}
+
+h2.title span {
+  font-weight: bold;
 }
 @supports (-webkit-appearance:none){
 .main{background:url("../img/main_bg.webp") center center/cover no-repeat}

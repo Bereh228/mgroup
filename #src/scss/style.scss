@@ -15,6 +15,8 @@
 @import 'main';
 @import 'header';
 @import 'button';
+@import 'advantage';
+
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -22,4 +24,15 @@ body{
 
 .container{
     width: 1410px;
+}
+
+h2.title{
+    color: $color-text2;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    span{
+        font-weight: bold;
+    }
 }
