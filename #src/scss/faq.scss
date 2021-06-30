@@ -24,6 +24,11 @@
         position: relative;
         margin-bottom: 23px;
         border-radius: 30px;
+        transition: .3s all;
+        background: #fff;
+        &:hover{
+            transform: translateY(-10px);
+        }
 
     }
     &-title{
@@ -34,6 +39,7 @@
         font-weight: bold;
         color: $color-text2;
         cursor: pointer;
+        border-radius: 30px;
     }
     &-input{
         width: 32px;

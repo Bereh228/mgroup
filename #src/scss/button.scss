@@ -13,7 +13,13 @@
         transform: translateY(-5px);
         background: linear-gradient(93.52deg, #fa7426 30.62%, #f51e29 79.3%);
     }
-
+    &-main{
+        display: inline-block;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
     &-header{
         font-size: 14px;
     }
@@ -25,9 +31,18 @@
     &-submit{
         font-size: 18px;
         margin-bottom: 23px;
+        margin-top: 20px;
     }
     &-consultation{
         font-size: 18px;
         padding: 19px 58px;
+        &_popup{
+            width: 350px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 16px;
+        }
     }
+    
+    
 }

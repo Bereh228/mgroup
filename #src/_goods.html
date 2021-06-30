@@ -1,4 +1,4 @@
-<section class="goods">
+<section class="goods" id="goods">
     <div class="goods__wrapper-top">
         <div class="container">
             <h2 class="title">Мы просчитали для вас<br><span>6 лучших проектов</span></h2>
@@ -319,11 +319,11 @@
         <h2 class="title">Не нашли<br><span>Подходящий проект?</span></h2>
         <div class="goods__wrapper-bottom__wrapper-bg">
             <div class="container">
-                <form action="" class="form">
+                <form action="" class="form" id="form-project">
                     <div class="goods__form-wrapper">
                         <div class="form__title">Индивидуальный проект</div>
                         <div class="form__text">Оставтье заявку и наш штатный проектировщик свяжется с Вами в течение 5 минут</div>
-                        <input type="text" name="user_name" id="user_name" placeholder="Ваше имя" class="form__name">
+                        <input type="text" name="user_name" id="user_name" placeholder="Ваше имя" class="form__name" onkeypress="noDigits(event)">
                         <input type="text" name="user_phone" id="user_phone" placeholder="Ваш номер телефона" class="form__phone">
                         <button class="button button button-submit" type="submit">Оставить заявку</button>
                         <div class="form__processingdata">Нажав на кнопку, вы даете согласие на обработку персональных данных</div>

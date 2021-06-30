@@ -4,8 +4,10 @@
     background-image: url('../img/team_bg.png');
     background-repeat: no-repeat;
     background-position-x: left;
+    overflow-x: hidden;
     &__wrapper{
         position: relative;
+        background: #fff;
     }
     &__text{
         color: $color-text4;

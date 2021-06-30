@@ -41,6 +41,10 @@
     &__item{
         display: flex;
         min-height: 400px;
+        transition: .3s all;
+        &:hover{
+            transform: translateY(-10px);
+        }
         &-wrapper{
             position: relative;
         }
@@ -115,6 +119,7 @@
         height: 791px;
         right: -90px;
         top: -120px;
+        z-index: -1;
         img{
             display: block;
             height: 100%;
@@ -151,7 +156,7 @@
             margin-bottom: 20px;
         }
         &__phone{
-            margin-bottom: 37px;
+            margin-bottom: 10px;
         }
         &__name,
         &__phone{
