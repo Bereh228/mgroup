@@ -125,3 +125,5 @@ window.addEventListener('scroll',function(){
         $('.arrowUP').fadeOut('slow');
     }
 })
+
+new WOW().init();
