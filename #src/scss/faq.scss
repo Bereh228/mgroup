@@ -1,0 +1,59 @@
+.faq{
+    min-height: 1050px;
+    background-image: url('../img/right_girl.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 72px;
+    &__head{
+        font-weight: bold;
+        font-size: 28px;
+        color: $color-text2;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    &__items{
+        min-height: 594px;
+        max-width: 820px;
+    }
+    &-item{
+        box-shadow: 0 0 10px rgba($color: #000000, $alpha: .4);
+        border-radius: 30px;
+        border-left: 54px solid transparent;
+        border-image: linear-gradient(to bottom,#fa7426,#f51e29);
+        border-image-slice: 1;
+        position: relative;
+        margin-bottom: 23px;
+        border-radius: 30px;
+
+    }
+    &-title{
+        display: block;
+        padding: 39px 10px;
+        background: #f8f8f8;
+        font-size: 18px;
+        font-weight: bold;
+        color: $color-text2;
+        cursor: pointer;
+    }
+    &-input{
+        width: 32px;
+        height: 32px;
+
+        appearance: none;
+        position: absolute;
+        top: 39px;
+        right: 15px;
+        background: url('../img/icon_down.png') center (center/cover) no-repeat;
+        transition: .3s all;
+        &:checked{
+            transform: rotate(-180deg);
+        }
+        &:checked + .faq-text{
+            display: block;
+        }
+    }
+    &-text{
+        display: none;
+        padding: 39px 10px;
+    }
+}
